@@ -26,14 +26,14 @@
                 >
                     <el-input
                         v-if="item.key == 'redirect'"
-                        v-model="item.param"
+                        v-model="curComponent.events[item.key]"
                         type="textarea"
                         placeholder="请输入完整的 URL"
                         @keydown.native.stop
                     />
                     <el-input
                         v-if="item.key == 'alert'"
-                        v-model="item.param"
+                        v-model="curComponent.events[item.key]"
                         type="textarea"
                         placeholder="请输入要 alert 的内容"
                         @keydown.native.stop
